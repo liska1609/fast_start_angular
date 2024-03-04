@@ -1,1 +1,18 @@
-<p>courses works!</p>
+<div class="px-4 py-1 h-full">
+
+  <div class="flex">
+    <div class="flex">
+      <span class="p-input-icon-left mr-2">
+        <i class="pi pi-search"></i>
+        <input type="text" pInputText [(ngModel)]="searchText" placeholder="Поиск" />
+      </span>
+      <p-button class="vertical-align-middle" label="Поиск" severity="help" (onClick)="serarchCourse()"></p-button>
+    </div>
+    <div class="flex-1 text-right">
+      <p-button class="vertical-align-middle" label="Добавить" icon="pi pi-plus"></p-button>
+    </div>
+  </div>
+
+  <app-courses-list></app-courses-list>
+  
+</div>

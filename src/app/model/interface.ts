@@ -1,9 +1,10 @@
 export interface Course {
     id: number,
     title: string,
-    creation_date: Date,
-    duration: Date,
-    description: string
+    creation_date: string,
+    duration: string,
+    description: string,
+    ready?:boolean,
 }
 
 export interface User {
