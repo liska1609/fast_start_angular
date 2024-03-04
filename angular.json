@@ -67,10 +67,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "fast_start_angular:build:production"
+              "buildTarget": "fast_start_angular:build:production"
             },
             "development": {
-              "browserTarget": "fast_start_angular:build:development"
+              "buildTarget": "fast_start_angular:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -78,7 +78,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "fast_start_angular:build"
+            "buildTarget": "fast_start_angular:build"
           }
         },
         "test": {
@@ -95,6 +95,8 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/primeng/resources/themes/lara-light-blue/theme.css",
+              "node_modules/primeng/resources/primeng.min.css",
               "src/styles.scss"
             ],
             "scripts": []

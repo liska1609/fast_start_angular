@@ -1,0 +1,30 @@
+<div class="py-3">
+  <p-card>
+    <ng-template pTemplate="header">
+      <div class="flex px-3">
+        <div class="flex">
+          <h3>
+            <span class="mr-3">{{ course.title }}</span>
+            <i class="pi pi-star-fill" [style]="{color: (course.ready ? 'var(--yellow-300)' : 'grey')}"></i>
+          </h3>
+        </div>
+        <div class="flex-1 text-right py-3">
+            <i class="pi pi-clock mr-2"></i>
+            <span class="mr-4">{{ course.duration }}</span>
+            
+            <i class="pi pi-calendar mr-2"></i>
+            <span>{{ course.creation_date}}</span>
+        </div>
+      </div>
+    </ng-template>
+
+    <div class="flex">
+      <span class="text-left w-full">{{ course.description }}</span>
+      <div class="flex text-right">
+        <p-button icon="pi pi-pencil" [text]="true"></p-button>
+        <p-button icon="pi pi-trash" [text]="true" severity="danger"></p-button>
+      </div>
+    </div>
+
+  </p-card>
+</div>
